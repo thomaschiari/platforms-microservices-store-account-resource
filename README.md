@@ -1,0 +1,1 @@
+# platforms-microservices-store-account-resource
