@@ -17,6 +17,7 @@ public class AccountService {
         return accountRepository.save(new AccountModel(in)).to();
     }
 
+    @SuppressWarnings("null")
     public Account read(String id) {
         return accountRepository.findById(id).map(AccountModel::to).orElse(null);
     }

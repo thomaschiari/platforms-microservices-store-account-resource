@@ -43,7 +43,7 @@ public class AccountModel {
     }
 
     public Account to() {
-        return new Account.builder()
+        return Account.builder()
             .id(id)
             .name(name)
             .email(email)

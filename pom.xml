@@ -56,6 +56,16 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
+			<!-- Habilitar para fazer uso de outros microsserviços -->
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-starter-openfeign</artifactId>
+			</dependency>
+			<!-- Permite o registro em um serviço de discovery -->
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 	<build>
