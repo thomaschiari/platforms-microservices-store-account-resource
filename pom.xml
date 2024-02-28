@@ -46,6 +46,16 @@
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
+		<!-- Habilitar para fazer uso de outros microsserviços -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-openfeign</artifactId>
+		</dependency>
+		<!-- Permite o registro em um serviço de discovery -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+		</dependency>
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>
@@ -55,16 +65,6 @@
 				<version>2023.0.0</version>
 				<type>pom</type>
 				<scope>import</scope>
-			</dependency>
-			<!-- Habilitar para fazer uso de outros microsserviços -->
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-starter-openfeign</artifactId>
-			</dependency>
-			<!-- Permite o registro em um serviço de discovery -->
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
